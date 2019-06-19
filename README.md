@@ -1,5 +1,17 @@
-# instagram-for-pets
+# Zooloo - Instagram for Pets
+## 2018 HighTechU Academy - Cohort 0
+## https://zooloo-e94f3.firebaseapp.com/login.html
 
-See my Live Project!!  
+![Promo of Website](promo.png)
 
-https://zooloo-e94f3.firebaseapp.com/login.html
+## Made with:
+
+* HTML
+* CSS
+* JS
+* Firebase
+
+## Made by:
+
+* Josh
+* Vitus
