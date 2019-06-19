@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <title>Instagram For Pets</title>
+  <link rel="stylesheet" type="text/css" href="./css/login.css">
+</head>
+<body>
+<h1>Zooloo</h1>
+<div id="user">
+  <input type="email" id="Email" placeholder="Email"> <br>
+  <input type="password" id="Password" placeholder="Password"> <br>
+  <button onclick="login()" class="button">Log In</button>
+  <button onclick="signup()"class="button">Sign Up</button><br>
+  <button onclick="resetPass()" class="button">Forgot Password</button>
+</div>
+<div id="bubbles">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+</div>
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBk6gJwbPXudaCrYF9zTRBGhe5x8YVUpqI",
+      authDomain: "zooloo-e94f3.firebaseapp.com",
+      databaseURL: "https://zooloo-e94f3.firebaseio.com",
+      projectId: "zooloo-e94f3",
+      storageBucket: "zooloo-e94f3.appspot.com",
+      messagingSenderId: "769484867484"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="./js/login.js"></script>
+</body>

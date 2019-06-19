@@ -1,0 +1,231 @@
+        h1 {
+      font-size: 300px;
+      color: rgb(255,179,186);
+      margin-top: 0px;
+    }
+
+    body {
+      text-align: center;
+      background: teal;
+    }
+
+    input {
+      border: 5px double orchid;
+      font-size: 38px;
+      margin: 30px;
+      text-align: center;
+    }
+
+    .button {
+      background-color: darkviolet;
+      color: white;
+      border: 5px double black  ;
+      margin: 10px;
+      font-size: 20px;
+    }
+
+    #Email {
+      margin: 10px 0px;
+    }
+
+    #Password {
+      margin: 10px 0px;
+    }
+
+    img {
+      display: block;
+      margin-top: 50px;
+      margin-left: 50px;
+      border: 5px double pink;
+    }
+html,
+body,
+#bubbles { height: 100% }
+body { overflow: hidden }
+#bubbles { padding: 100px 0 }
+.bubble {
+    width: 60px;
+    height: 60px;
+    background: #ffb200;
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    position: absolute;
+}
+
+.x1 {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.2;
+    -webkit-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -o-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+
+.x2 {
+    left: 200px;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.5;
+    -webkit-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+    -o-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+}
+.x3 {
+    left: 350px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkSit-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -o-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+.x4 {
+    left: 470px;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.35;
+    -webkit-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -o-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+.x5 {
+    left: 150px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -o-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes moveclouds {
+    0% {
+        top: 500px;
+    }
+    100% {
+        top: -500px;
+    }
+}
+
+@-webkit-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes moveclouds {
+    0% {
+        top: 500px;
+    }
+
+    100% {
+        top: -500px;
+    }
+}
+
+@-moz-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+@-o-keyframes moveclouds {
+    0% {
+        top: 500px;
+    }
+    100% {
+        top: -500px;
+    }
+}
+
+@-o-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+$text-color: #00332B;
+$lighter: #00FFD8;
+body, hutml {
+    height: 100vh;
+    width: 100%;
+}
+body {
+  background: linear-gradient(to bottom, $text-color, lighten($text-color, 5%));
+  display: grid;
+  align-items: center;
+    justify-content: center;
+}
+body * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+span {
+  text-align: center;
+  font: 8em 'Baloo', cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $text-color;
+  animation: anim 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /*-webkit-animation: anim 6s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;*/
+}
+@mixin shadow($a, $b) {
+  text-shadow: $a $b 0px $lighter;
+}
+$L1: 3px;
+$L2: -3px;
+$L3: 4px;
+$L4: -4px;
+@-webkit-keyframes anim {
+   0% {
+    @include shadow($L2, $L2);
+   }
+  10% {
+    @include shadow($L1, $L4);
+   }
+  20% {
+    @include shadow($L2, $L3);
+  }
+  30% {
+    @include shadow($L1, $L4);
+  }
+  40% {
+    c@include shadow($L4, $L1);
+  }
+  50% {
+    @include shadow($L1, $L3);
+  }
+  60% {
+    @include shadow($L4, $L1);
+  }
+  70% {
+    @include shadow($L1, $L3);
+  }
+  80% {
+    @include shadow($L2, $L2);
+  }
+  90% {
+    @include shadow($L1, $L4);
+  }
+  100% {
+    @include shadow($L4, $L1);
+  }
+}

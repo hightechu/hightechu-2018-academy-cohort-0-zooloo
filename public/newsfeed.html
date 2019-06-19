@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <title>SUCCESS</title>
+  <link rel="stylesheet" type="text/css" href="./css/newsfeed.css">
+</head>
+<body onload="newsfeed()">
+  <div id="header">
+    <h1>Zooloo</h1>
+    <input type="text" class="search" placeholder="Search">
+    <button type="button" class="btnsearch">Search</button> <br>
+  </div>
+  <div id="post">
+    <input id="caption" type="text" class="caption" placeholder="Caption">
+    <input id="url" type="text" class="url" placeholder="Url">
+    <button onclick="submit()" class="btnpost">Post</button>
+    <!--<button type="button" class="btndelete">Delete</button>-->
+  </div>
+  <div id="posts">
+  </div>
+    <button onclick="signOut()" class="btnsignout">Sign Out</button>
+
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBk6gJwbPXudaCrYF9zTRBGhe5x8YVUpqI",
+      authDomain: "zooloo-e94f3.firebaseapp.com",
+      databaseURL: "https://zooloo-e94f3.firebaseio.com",
+      projectId: "zooloo-e94f3",
+      storageBucket: "zooloo-e94f3.appspot.com",
+      messagingSenderId: "769484867484"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="./js/newsfeed.js"></script>
+</body>

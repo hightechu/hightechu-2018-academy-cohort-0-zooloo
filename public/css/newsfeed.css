@@ -1,0 +1,76 @@
+h1 {
+  margin: 0px;
+  color: rgb(255,179,186);
+}
+
+body {
+  text-align: center;
+  background: teal;
+}
+
+#header {
+  border-radius: 80px 30px 80px 30px;
+  background: #73AD21;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 1200px;
+  height: 400px;
+  font-size: 80px;
+}
+
+#post {
+  border: 5px double black;
+}
+
+#posts {
+  border: 5px double blue;
+}
+
+.search {
+  margin: 10px;
+  padding: 10px 400px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btnsearch {
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: darkviolet;
+  color: white;
+  border: 5px double black;
+}
+
+.caption {
+  text-align: center;
+  margin: 10px;
+  padding: 10px 100px;
+  font-size: 20px;
+}
+
+.url {
+  text-align: center;
+  margin: 10px;
+  padding: 10px 100px;
+  font-size: 20px;
+}
+
+.btnpost {
+  margin: 10px;
+  background-color: darkviolet;
+  color: white;
+  border: 5px double black;
+}
+
+.btndelete {
+  margin: 10px;
+  background-color: darkviolet;
+  color: white;
+  border: 5px double black;
+}
+
+.btnsignout {
+  margin-top: 400px;
+}
