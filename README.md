@@ -10,6 +10,8 @@ https://zooloo-e94f3.firebaseapp.com/login.html
 
 ![Promo of Website](promo.png)
 
+![Promo of Website](promo-1.png)
+
 ## Made with:
 
 * HTML
