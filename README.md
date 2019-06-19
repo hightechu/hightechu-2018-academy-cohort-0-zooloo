@@ -1,6 +1,12 @@
 # Zooloo - Instagram for Pets
-## 2018 HighTechU Academy - Cohort 0
-## https://zooloo-e94f3.firebaseapp.com/login.html
+
+**2018 HighTechU Academy - Cohort 0** 
+
+## Website
+
+https://zooloo-e94f3.firebaseapp.com/login.html
+
+## Promo
 
 ![Promo of Website](promo.png)
 
